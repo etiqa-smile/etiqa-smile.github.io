@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html ng-app='' ng-init="env='UAT'">
+<head>
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Download Portal</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+	<style>
+		td {
+			width: 300px;
+			text-align: center;
+		}
+		hr {
+			margin-top: 50px;
+		}
+		.label {
+			color: #007BA7;
+			font-size: 20px;
+			text-decoration: underline;
+			vertical-align: middle;
+			text-align: center;
+		}
+		.label img {
+			padding: 0.5em;
+		}
+		.block {
+			padding: 1em;
+			text-align: center;
+			border: 1px lightgray solid;
+			border-radius: 5px;
+		}
+		.row {
+			width: 80%;
+			margin: auto;
+		}
+		.linkSummaries a {
+			display: block;
+			margin: 20px;
+		}
+		.linkSummaries img {
+			margin: 10px;
+		}
+		.linkSummaries {
+			display: block;
+			margin-bottom: 50px;
+		}
+		body .container .row {
+			text-align: center;
+		}
+		.vm-gameCategoryTitle {
+			font-weight: 500;
+			font-size: 20px;
+		}
+		
+		.btn{
+			margin-top:10px;
+			margin-bottom:10px;
+			min-width: 150px;
+		}
+		
+		.row-gsoft{ background-color:#ebd7fa; color:white; }
+		.row-live22{ background-color:powderblue;color:white;  }
+		.row-slotsft{ background-color: #83A6C9;color:white;  }
+		.row-1sgames{ background-color:#ffdddd;color:white; }
+		
+		.row img{
+			max-width: 200px;
+		}
+		.vm-gameCategoryTitle{
+			display:block;	
+		}
+	</style>
+</head>
+
+<body>
+	<!--	//the Download Container / 3 columns-->
+	<div class="container">
+
+		<div class="jumbotron">
+			<h2>BNHM Download Portal</h2>
+			<p>One stop for our games/app distribution</p>
+		</div>
+
+		<!-- row -->
+		<div class="row row-live22">
+			<div class="col-sm-4">
+				<!-- <img src="portal/preview-live22.png" /> -->
+				<span class="vm-gameCategoryTitle">Museum Tour (Prototype)</span>
+			</div>
+			<div class="col-sm-4">
+				<a href="/mobileservice/download/android" class="disabled btn btn-info btn-lg">
+					<span class="glyphicon glyphicon-cloud-download"></span>	Android
+				</a>
+				
+				<!-- <a href="/mobileservice/download/live22/pc" class="btn btn-info btn-lg">
+					<span class="glyphicon glyphicon-cloud-download"></span>Windows
+				</a> -->
+			</div>
+			<div class="col-sm-4">
+				<a href="itms-services://?action=download-manifest&url=https://babanyonya.gitlab.io/ios/app.plist" class="btn btn-info btn-lg">
+					<span class="glyphicon glyphicon-cloud-download"></span>	iOS
+				</a>
+<!-- 				
+				<a href="/mobileservice/download/live22/mac" class="btn btn-info btn-lg">
+					<span class="glyphicon glyphicon-cloud-download"></span>	Mac
+				</a> -->
+
+
+			</div>
+		</div>
+		<!-- row -->	
+	
+	</div>
+	<!-- Container -->
+
+		<hr>
+	<!--		 the long lines-->
+	<div class="container">
+		
+		<h4>Status Check</h4>
+	  	<div class="row">
+			<div class="col-sm-2">
+<!--		  One of three columns-->
+			<a href=/ios/app.plist>iOS Plist</a>
+		</div>
+	</div>
+	
+</body>
+
+</html>
