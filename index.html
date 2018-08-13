@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html ng-app='' ng-init="env='UAT'">
+
 <head>
 	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="cache-control" content="no-cache" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Download Portal</title>
@@ -13,9 +15,11 @@
 			width: 300px;
 			text-align: center;
 		}
+
 		hr {
 			margin-top: 50px;
 		}
+
 		.label {
 			color: #007BA7;
 			font-size: 20px;
@@ -23,54 +27,78 @@
 			vertical-align: middle;
 			text-align: center;
 		}
+
 		.label img {
 			padding: 0.5em;
 		}
+
 		.block {
 			padding: 1em;
 			text-align: center;
 			border: 1px lightgray solid;
 			border-radius: 5px;
 		}
+
 		.row {
 			width: 80%;
 			margin: auto;
 		}
+
 		.linkSummaries a {
 			display: block;
 			margin: 20px;
 		}
+
 		.linkSummaries img {
 			margin: 10px;
 		}
+
 		.linkSummaries {
 			display: block;
 			margin-bottom: 50px;
 		}
+
 		body .container .row {
 			text-align: center;
 		}
+
 		.vm-gameCategoryTitle {
 			font-weight: 500;
 			font-size: 20px;
 		}
-		
-		.btn{
-			margin-top:10px;
-			margin-bottom:10px;
+
+		.btn {
+			margin-top: 10px;
+			margin-bottom: 10px;
 			min-width: 150px;
 		}
-		
-		.row-gsoft{ background-color:#ebd7fa; color:white; }
-		.row-live22{ background-color:powderblue;color:white;  }
-		.row-slotsft{ background-color: #83A6C9;color:white;  }
-		.row-1sgames{ background-color:#ffdddd;color:white; }
-		
-		.row img{
+
+		.row-gsoft {
+			background-color: #ebd7fa;
+			color: white;
+		}
+
+		.row-live22 {
+			background-color: powderblue;
+			color: white;
+		}
+
+		.row-slotsft {
+			background-color: #83A6C9;
+			color: white;
+		}
+
+		.row-1sgames {
+			background-color: #ffdddd;
+			color: white;
+		}
+
+		.row img {
 			max-width: 200px;
 		}
-		.vm-gameCategoryTitle{
-			display:block;	
+
+		.vm-gameCategoryTitle {
+			display: block;
 		}
 	</style>
 </head>
@@ -91,41 +119,60 @@
 				<span class="vm-gameCategoryTitle">Etiqa Smile Portal</span>
 			</div>
 			<div class="col-sm-4">
-				<a href="/mobileservice/download/android" class="btn btn-info btn-lg">
-					<span class="glyphicon glyphicon-cloud-download"></span>	Android
+				<a href="/download/android/smile-uat.apk" class="btn btn-info btn-lg">
+					<span class="glyphicon glyphicon-cloud-download"></span> Android
 				</a>
-				
+
 				<!-- <a href="/mobileservice/download/live22/pc" class="btn btn-info btn-lg">
 					<span class="glyphicon glyphicon-cloud-download"></span>Windows
 				</a> -->
 			</div>
 			<div class="col-sm-4">
 				<a href="itms-services://?action=download-manifest&url=https://etiqa-smile.github.io/ios/app.plist" class="btn btn-info btn-lg">
-					<span class="glyphicon glyphicon-cloud-download"></span>	iOS
+					<span class="glyphicon glyphicon-cloud-download"></span> iOS
 				</a>
-<!-- 				
+				<!-- 				
 				<a href="/mobileservice/download/live22/mac" class="btn btn-info btn-lg">
 					<span class="glyphicon glyphicon-cloud-download"></span>	Mac
 				</a> -->
 			</div>
 		</div>
-		<!-- row -->	
-	
+		<!-- row -->
+
+		<div class="row row-live22">
+			<div class="col-sm-4">
+
+				<span class="vm-gameCategoryTitle">Etiqa Partner Portal</span>
+			</div>
+			<div class="col-sm-4">
+				<a href="/download/android/partner-uat.apk" class="btn btn-info btn-lg">
+					<span class="glyphicon glyphicon-cloud-download"></span> Android
+				</a>
+
+
+			</div>
+			<div class="col-sm-4">
+				<a href="itms-services://?action=download-manifest&url=https://etiqa-smile.github.io/ios/app.plist" class="btn btn-info btn-lg">
+					<span class="glyphicon glyphicon-cloud-download"></span> iOS
+				</a>
+			</div>
+		</div>
+
 	</div>
 	<!-- Container -->
 
-		<hr>
+	<hr>
 	<!--		 the long lines-->
 	<div class="container">
-		
+
 		<h4>Status Check</h4>
-	  	<div class="row">
+		<div class="row">
 			<div class="col-sm-2">
-<!--		  One of three columns-->
-			<a href=/download/app.plist>iOS Plist</a>
+				<!--		  One of three columns-->
+				<a href=/download/app.plist>iOS Plist</a>
+			</div>
 		</div>
-	</div>
-	
+
 </body>
 
 </html>
